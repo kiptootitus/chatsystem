@@ -24,7 +24,8 @@ roomMessage.innerHTML = `Connected in room ${roomname}`
 socket.emit('joined-user', {
     username: username,
     roomname: roomname
-})
+});
+// const server.io =
 //Sending data when user clicks send
 send.addEventListener('click', () =>{
     socket.emit('chat', {
