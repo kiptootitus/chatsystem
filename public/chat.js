@@ -26,6 +26,7 @@ socket.emit('joined-user', {
     roomname: roomname
 })
 
+
 //Sending data when user clicks send
 send.addEventListener('click', () =>{
     socket.emit('chat', {
